@@ -8,12 +8,6 @@ Diseño orginal de [Bartosz Jarocki](https://github.com/BartoszJarocki/cv)
 
 Basado en el diseño de [midudev](https://github.com/midudev/minimalist-portfolio-json?tab=readme-ov-file)
 
-
-<img src="./portada1-min.png"></img>
-
-<img src="./portada2-min.png"></img>
-
-
 ### 🔸Tecnologias Utilizadas
 - **HTML5:** Para la estructura del contenido.
 
@@ -21,5 +15,8 @@ Basado en el diseño de [midudev](https://github.com/midudev/minimalist-portfoli
 
 - **CSS Flexbox:** Herramientas para diseños responsivos.
 
+<img src="./portada1-min.png"></img>
+
+<img src="./portada2-min.png"></img>
 
 ¡Gracias por visitar mi trabajo!
