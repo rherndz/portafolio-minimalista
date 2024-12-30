@@ -1,0 +1,390 @@
+/* Tipofrafia para titles y subtitles*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Tipofrafia para texto normal */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+    --color-sharkblack: hsl(214, 17%, 16%);
+    --color-makogrey:hsl(217, 10%, 25%);
+    --color-shamrock:hsl(160, 55%, 55%);
+    --color-whitegallery:hsl(0, 0%, 93%);
+    --color-altowhite: hsl(0, 2%, 84%);
+
+    --color-white:hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%); 
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header navbar */
+.header-navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--color-sharkblack);
+}
+
+.header-navbar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-navbar-logo figcaption h2{
+    color: var(--color-whitegallery);
+    margin: 0 5px;
+}
+
+.header-navbar-navegation ul{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.header-navbar-navegation ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+.header-navbar-navegation ul li:nth-child(-n+3):hover{
+    border-bottom: 1px solid var(--color-whitegallery);
+}
+
+.header-navbar-navegation .navbar-link{
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-whitegallery);
+}
+.header-navbar-navegation .link-resalt{
+    font-weight: bolder;
+    padding: 4px 8px;
+    border: none;
+    background-color: var(--color-shamrock);
+}
+
+.header-navbar-navegation .link-resalt:hover {
+    color: var(--color-shamrock);
+    background-color: var(--color-whitegallery);
+    transition: 0.2s;
+}
+
+/* headboard */
+.headboard-container{
+    width: 100%;
+    height: 29em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    padding: 1em;
+    background: var(--color-sharkblack);
+    background: linear-gradient(0deg, hsl(160, 55%, 55%) 8%, var(--color-sharkblack) 8%, var(--color-sharkblack));
+}
+.headboard-contentpanel{
+    width: 100%;
+    max-width: 400px;
+    min-width: 270px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-whitegallery);
+}
+.headboard-container figure{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headboard-container figure img{
+    border-radius: 200%;
+}
+.headboard-panel-title{
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    line-height: 2em;
+    color: var(--color-shamrock);
+}
+.headboard-panel-description{
+    font-size: 0.9em;
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+}
+.headboard-panel-ubication{
+    font-size: 0.8em;
+    font-weight: 800;
+    color: var(--color-shamrock);
+}
+
+.headboard-panel-socialmedia ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 1.5em 1em;
+}
+.headboard-panel-socialmedia ul li{
+    list-style: none;
+}
+.headboard-panel-socialmedia ul li a{
+    text-decoration: none;
+    transition: 0.2s;
+    color: var(--color-whitegallery);
+}
+
+.headboard-container figure{
+    border-radius: 10px;
+}
+
+/*  Main  */
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 2.5em;
+    padding: 1em 1.5em;
+    background-color: var(--color-whitegallery);
+}
+
+.section-about, .section-experencia, .section-education, .section-skills, .section-proyects{
+    width: 100%;
+    max-width: 750px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+.section-title{
+    font-weight: 800;
+    line-height: 2.5em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px groove var(--color-sharkblack);
+    color: var(--color-sharkblack);
+}
+
+/* Section Experencia */
+.section-experencia-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3em;
+    padding-top: 1em;
+}
+
+.section-experencia-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-experencia-panel ul ol p{
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+/* Section Educacion */
+.section-education-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* Section Proyectos */
+.section-proyects-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-between;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 1em 0;
+}
+.proyects-card{
+    width: 100%;
+    min-width: 250px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.proyects-card-title{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.proyects-card-title a{
+    color: var(--color-sharkblack);
+    text-decoration: none;
+}
+.proyects-card-title a:hover{
+    color: var(--color-shamrock);
+}
+
+.proyects-card-description{
+    font-size: 16px;
+    max-width: 400px;
+}
+
+.proyects-card-label ul li{
+    font-size: 13px;
+    letter-spacing: 1px;
+    list-style: none;
+    cursor: pointer;
+}
+.proyects-card-label ul li span{
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: var(--color-altowhite);
+}
+
+/* Section Habilidades */
+.section-skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    justify-content: stretch;
+    row-gap: 25px;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+
+/* Footer */
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 1.6em 2em;
+    background: var(--color-sharkblack);
+    background: linear-gradient(180deg, hsl(160, 55%, 55%) 8%, var(--color-sharkblack) 8%, var(--color-sharkblack));
+}
+
+.footer-panel-description{
+    display: flex;
+    align-items: center;
+    color: var(--color-whitegallery);
+}
+.footer-panel-socialmedia ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+.footer-panel-socialmedia ul li{
+    list-style: none;
+    margin: 0 8px;
+}
+.footer-panel-socialmedia ul li a svg{
+    color: var(--color-whitegallery);
+}
+
+
+
+/* --- Responsive Desing --- */
+
+/* Tablet */
+@media (min-width:768px){
+    /* Section Proyectos */
+    .section-proyects-content{
+        flex-direction: row;
+        column-gap: 15px;
+        row-gap: 25px;
+    }
+
+    .proyects-card{
+        width: 100%;
+        max-width: 340px;
+    }
+
+}
+
+/*Lapto*/
+@media (min-width:1024px){
+    
+    /* Header navbar */
+    .header-navbar{
+        justify-content: center;
+        column-gap: 14em;
+        padding: 1.5em 3em;
+    }
+    .header-navbar-navegation ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* headboard */
+    .headboard-container{
+        height: 24rem;
+        flex-direction: row;
+        column-gap: 12em;
+        padding: 0;
+    }
+    .headboard-contentpanel{
+        max-width: 440px;
+        text-align: left;
+    }
+
+    .headboard-panel-title{
+        font-size: 1.9em;
+    }
+    .headboard-panel-description{
+        font-size: 1.1em;
+    }
+    .headboard-panel-ubication{
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    .headboard-panel-socialmedia ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: 1.5em 0;
+    }
+
+    /*  Main  */
+    .section-about,
+    .section-experencia,
+    .section-education{
+        font-size: 1.2em;
+    }
+
+    /* Section Proyectos */
+    .section-proyects-content{
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+
+    .proyects-card{
+        max-width: 350px;
+    }
+
+    /* Section Habilidades */
+    .section-skills-content {
+        column-gap: 4em;
+        padding: 10px;
+    }
+}
